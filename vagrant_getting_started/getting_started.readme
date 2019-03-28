@@ -8,6 +8,26 @@ Nice:
 
 Base images are known as 'boxes'.  First step in setup is to specify your box, in the Vagrantfile. Search for something suitable at https://vagrantcloud.com/search
 
+Also nice:
+
+Take a moment to think what just happened: With just one line of configuration and one command in your terminal, we brought up a fully functional, SSH accessible virtual machine. Cool. The SSH session can be terminated with CTRL+D.
+
+Here were the steps:
+
+- Installed vagrant (msi file)      fairly quick
+- VirtualBox was already installed
+- Installed powershell upgrade (v4) longer
+- Download/install a base image with 'vagrant box add hashicorp/precise64'
+- Create a project folder and invoke 'vagrant init'
+- Edit one line to set the base image for the vm (same box as added earlier)
+- Run 'vagrant up' to start the box
+- Run vagrant ssh to interact with the machine.  Can see the host project files mounted at /vagrant so could run any scripts etc here.
+
+Basically this allows me to set up (or git clone) a development source tree with NO development tools on my machine and invoke a virtual development machine via vagrant.
+
+Not sure yet about how eg an Intellij IDE would come into play, because that needs compilation tools, so if the IDE were in the virtual machine, how would it interact with my screen ???
+
+  
 
 
 
