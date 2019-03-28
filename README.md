@@ -13,6 +13,3 @@ TIP: to avoid always entering git creds can try this from stackover:
 	git push https://github.com/owner/repo.git
 	git config --global credential.helper 'cache --timeout 7200'
 TIP: run GitBash as admin before trying to change git config if it complains about not being able to lock a gitconfig file
-
-
-
