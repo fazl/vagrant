@@ -29,6 +29,21 @@ Not sure yet about how eg an Intellij IDE would come into play, because that nee
 
   
 
+WOW 
+===
+Quite cool.
+To install Apache it was very straight forward:
+1) Add a short script in the project, to install Apache in the VM,
+2) Insert a 'provisioning' line in the Vagrantfile:
+        config.vm.provision :shell, path: "bootstrap.sh"
+3) vagrant reload --provision 
+4) Watch it get installed..
+5) vagrant ssh to login to the machine and do a wget command to show that a webserver is running:
+
+$wget -qO- 127.0.0.1
+    <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+    <html>
+    ...
 
 
 
