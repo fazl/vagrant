@@ -1,0 +1,14 @@
+Loosely following https://www.vagrantup.com/intro/getting-started/project_setup.html
+
+Nice: 
+	You can also run vagrant init in a pre-existing directory to set up Vagrant for an existing project.
+
+	The Vagrantfile is meant to be committed to version control with your project, if you use version control. 
+	This way, every person working with that project can benefit from Vagrant without any upfront work.
+
+Base images are known as 'boxes'.  First step in setup is to specify your box, in the Vagrantfile. Search for something suitable at https://vagrantcloud.com/search
+
+
+
+
+
